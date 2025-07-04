@@ -1,0 +1,80 @@
+{
+  "capabilities": {
+    "hasTpms": false,
+    "hasDoors": false,
+    "hasHood": false,
+    "hasTrunk": false,
+    "hasChargePort": true,
+    "hasHeadlights": true
+  },
+  "chargeStateOverlay": {
+    "xPercent": 0.5,
+    "yPercent": 0.5,
+    "isFullSize": true,
+    "mqttTopic": "v/c/state",
+    "visibilityTopics": [
+      "v/c/pilot",
+      "v/d/cp"
+    ],
+    "imagePathMap": {
+      "charging": "roadster_outline_cp.png",
+      "done": "roadster_outline_cd.png",
+      "stopped": "roadster_outline_cs.png"
+    }
+  },
+  "dataPoints": [
+    {
+      "xPercent": 0.00,
+      "yPercent": 0.92,
+      "label": "Ambient",
+      "mqttTopic": "v/e/temp",
+      "unit": "°C",
+      "iconCodepoint": "e406"
+    },
+    {
+      "xPercent": 0.415,
+      "yPercent": 0.45,
+      "label": "Motor",
+      "mqttTopic": "v/m/temp",
+      "unit": "°C",
+      "iconCodepoint": "f842"
+    },
+    {
+      "xPercent": 0.43,
+      "yPercent": 0.54,
+      "label": "PEM",
+      "mqttTopic": "v/i/temp",
+      "unit": "°C",
+      "iconCodepoint": "e322"
+    },
+    {
+      "xPercent": 0.405,
+      "yPercent": 0.68,
+      "label": "Battery",
+      "mqttTopic": "v/b/temp",
+      "unit": "°C",
+      "iconCodepoint": "f305"
+    }
+  ],
+    "headlights": {
+    "xPercent": 0.5,
+    "yPercent": 0.02,
+    "isFullSize": false
+  },
+  "tyres": [
+    {
+      "xPercent": 0.25,
+      "yPercent": 0.28,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.25,
+      "yPercent": 0.82,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    }
+  ]
+}

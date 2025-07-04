@@ -1,0 +1,139 @@
+{
+  "capabilities": {
+    "hasTpms": false,
+    "hasDoors": true,
+    "hasHood": true,
+    "hasTrunk": true,
+    "hasChargePort": false,
+    "hasHeadlights": true
+  },
+  "chargeStateOverlay": {
+    "xPercent": 0.5,
+    "yPercent": 0.5,
+    "mqttTopic": "v/c/state",
+    "isFullSize": true,
+    "visibilityTopics": [
+      "v/c/pilot"
+    ],
+    "imagePathMap": {
+      "charging": "charging.png",
+      "done": "charging_nopower.png",
+      "stopped": "charging_nopower.png"
+    }
+  },
+  "dataPoints": [
+    {
+      "xPercent": 0.00,
+      "yPercent": 0.00,
+      "label": "Ambient",
+      "mqttTopic": "v/e/temp",
+      "unit": "°C",
+      "iconCodepoint": "e406"
+    },
+    {
+      "xPercent": 0.42,
+      "yPercent": 0.10,
+      "label": "Motor",
+      "mqttTopic": "v/m/temp",
+      "unit": "°C",
+      "iconCodepoint": "f305"
+    },
+    {
+      "xPercent": 0.42,
+      "yPercent": 0.6,
+      "label": "Cabin",
+      "mqttTopic": "v/e/cabintemp",
+      "unit": "°C",
+      "iconCodepoint": "e531"
+    },
+    {
+      "xPercent": 0.405,
+      "yPercent": 0.68,
+      "label": "Battery",
+      "mqttTopic": "v/b/temp",
+      "unit": "°C",
+      "iconCodepoint": "f305"
+    }
+  ],
+  "statefulIconPoints": [
+    {
+      "xPercent": 0.5,
+      "yPercent": 0.5,
+      "mqttTopic": "v/e/locked",
+      "iconForTrue": "e897",
+      "iconForFalse": "e898",
+      "iconForNull": "e63f"
+    }
+  ],
+  "hood": {
+    "xPercent": 0.5,
+    "yPercent": 0.2,
+    "isFullSize": false
+  },
+  "trunk": {
+    "xPercent": 0.5,
+    "yPercent": 0.85,
+    "activeStateImagePath": "leaf_topview_t.png",
+    "isFullSize": true
+  },
+  "headlights": {
+    "xPercent": 0.5,
+    "yPercent": 0.08,
+    "activeStateImagePath": "leaf_topview_hd.png",
+    "isFullSize": true
+  },
+  "doorFL": {
+    "xPercent": 0.25,
+    "yPercent": 0.45,
+    "activeStateImagePath": "leaf_topview_fld_t.png",
+    "isFullSize": true
+  },
+  "doorFR": {
+    "xPercent": 0.75,
+    "yPercent": 0.45,
+    "activeStateImagePath": "leaf_topview_frd_t.png",
+    "isFullSize": true
+  },
+  "doorRL": {
+    "xPercent": 0.25,
+    "yPercent": 0.65,
+    "activeStateImagePath": "leaf_topview_rld_t.png",
+    "isFullSize": true
+  },
+  "doorRR": {
+    "xPercent": 0.75,
+    "yPercent": 0.65,
+    "activeStateImagePath": "leaf_topview_rrd_t.png",
+    "isFullSize": true
+  },
+  "tyres": [
+    {
+      "xPercent": 0.09,
+      "yPercent": 0.28,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.91,
+      "yPercent": 0.28,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.09,
+      "yPercent": 0.82,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.91,
+      "yPercent": 0.82,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    }
+  ]
+}

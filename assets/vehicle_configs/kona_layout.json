@@ -1,0 +1,142 @@
+{
+  "capabilities": {
+    "hasTpms": true,
+    "hasDoors": true,
+    "hasHood": true,
+    "hasTrunk": true,
+    "hasChargePort": true,
+    "hasHeadlights": true
+  },
+  "dataPoints": [
+    {
+      "xPercent": 0.00,
+      "yPercent": 0.00,
+      "label": "Ambient",
+      "mqttTopic": "v/e/temp",
+      "unit": "°C",
+      "iconCodepoint": "e406"
+    },
+    {
+      "xPercent": 0.34,
+      "yPercent": 0.1,
+      "label": "Motor",
+      "mqttTopic": "v/m/temp",
+      "unit": "°C",
+      "iconCodepoint": "f842"
+    },
+    {
+      "xPercent": 0.52,
+      "yPercent": 0.1,
+      "label": "PEM",
+      "mqttTopic": "v/i/temp",
+      "unit": "°C",
+      "iconCodepoint": "e322"
+    },
+    {
+      "xPercent": 0.42,
+      "yPercent": 0.6,
+      "label": "Cabin",
+      "mqttTopic": "v/e/cabintemp",
+      "unit": "°C",
+      "iconCodepoint": "e531"
+    },
+    {
+      "xPercent": 0.405,
+      "yPercent": 0.74,
+      "label": "Battery",
+      "mqttTopic": "v/b/temp",
+      "unit": "°C",
+      "iconCodepoint": "f305"
+    }
+  ],
+  "statefulIconPoints": [
+    {
+      "xPercent": 0.5,
+      "yPercent": 0.5,
+      "mqttTopic": "v/e/locked",
+      "iconForTrue": "e897",
+      "iconForFalse": "e898",
+      "iconForNull": "e63f"
+    }
+  ],
+  "hood": {
+    "xPercent": 0.5,
+    "yPercent": 0.26,
+    "isFullSize": false
+  },
+  "trunk": {
+    "xPercent": 0.5,
+    "yPercent": 0.92,
+    "isFullSize": false
+  },
+  "chargePort": {
+    "xPercent": 0.3,
+    "yPercent": 0.06,
+    "widthPercent": 0.1,
+    "heightPercent": 0.1,
+    "isFullSize": false
+  },
+  "headlights": {
+    "xPercent": 0.5,
+    "yPercent": 0.02,
+    "isFullSize": false
+  },
+  "doorFL": {
+    "xPercent": 0.15,
+    "yPercent": 0.45,
+    "widthPercent": 0.12,
+    "heightPercent": 0.12,
+    "isFullSize": false
+  },
+  "doorFR": {
+    "xPercent": 0.85,
+    "yPercent": 0.45,
+    "widthPercent": 0.12,
+    "heightPercent": 0.12,
+    "isFullSize": false
+  },
+  "doorRL": {
+    "xPercent": 0.15,
+    "yPercent": 0.65,
+    "widthPercent": 0.12,
+    "heightPercent": 0.12,
+    "isFullSize": false
+  },
+  "doorRR": {
+    "xPercent": 0.85,
+    "yPercent": 0.65,
+    "widthPercent": 0.12,
+    "heightPercent": 0.12,
+    "isFullSize": false
+  },
+  "tyres": [
+    {
+      "xPercent": 0.09,
+      "yPercent": 0.28,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.91,
+      "yPercent": 0.28,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.09,
+      "yPercent": 0.82,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.91,
+      "yPercent": 0.82,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    }
+  ]
+}

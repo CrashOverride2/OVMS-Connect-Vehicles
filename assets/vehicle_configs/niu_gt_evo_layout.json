@@ -1,0 +1,105 @@
+{
+  "capabilities": {
+    "hasTpms": false,
+    "hasDoors": false,
+    "hasHood": false,
+    "hasTrunk": true,
+    "hasChargePort": false,
+    "hasHeadlights": true
+  },
+  "chargeStateOverlay": {
+    "xPercent": 0.5,
+    "yPercent": 0.5,
+    "mqttTopic": "v/c/state",
+    "isFullSize": true,
+    "visibilityTopics": [
+      "v/c/pilot"
+    ],
+    "imagePathMap": {
+      "charging": "charging.png"
+    }
+  },
+  "dataPoints": [
+    {
+      "xPercent": 0.08,
+      "yPercent": 0.5,
+      "label": "Sidestand",
+      "mqttTopic": "v/e/handbrake",
+      "iconCodepoint": "f871"
+    },
+    {
+      "xPercent": 0.1,
+      "yPercent": 0.80,
+      "label": "Motor",
+      "mqttTopic": "v/m/temp",
+      "unit": "°C",
+      "iconCodepoint": "f305"
+    },
+    {
+      "xPercent": 0.12,
+      "yPercent": 0.65,
+      "label": "FOC",
+      "mqttTopic": "v/i/temp",
+      "unit": "°C",
+      "iconCodepoint": "f305"
+    },
+    {
+      "xPercent": 0.1,
+      "yPercent": 0.35,
+      "label": "Battery",
+      "mqttTopic": "v/b/temp",
+      "unit": "°C",
+      "iconCodepoint": "f305"
+    }
+  ],
+  "statefulIconPoints": [
+    {
+      "xPercent": 0.5,
+      "yPercent": 0.5,
+      "mqttTopic": "v/e/locked",
+      "iconForTrue": "e897",
+      "iconForFalse": "e898",
+      "iconForNull": "e63f"
+    }
+  ],
+  "trunk": {
+    "xPercent": 0.5,
+    "yPercent": 0.56,
+    "isFullSize": false
+  },
+  "headlights": {
+    "xPercent": 0.5,
+    "yPercent": 0.05,
+    "isFullSize": false
+  },
+  "tyres": [
+    {
+      "xPercent": 0.09,
+      "yPercent": 0.28,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.91,
+      "yPercent": 0.28,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.09,
+      "yPercent": 0.82,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    },
+    {
+      "xPercent": 0.91,
+      "yPercent": 0.82,
+      "widthPercent": 0.17,
+      "heightPercent": 0.07,
+      "isFullSize": false
+    }
+  ]
+}
