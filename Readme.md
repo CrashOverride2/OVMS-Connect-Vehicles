@@ -193,3 +193,11 @@ This overlay displays a specific image from a list based on the *string value* o
 *   **Finding Icon Codepoints:** Browse the [Google Fonts Material Symbols page](https://fonts.google.com/icons?selected=Material+Symbols). Select an icon, and in the side panel, find the "Codepoint" value (e.g., `e897`). Use this value in your JSON.
 *   **Start Simple:** Begin by defining just the `capabilities` and the component points (`hood`, `doors`, etc.) without any `ImagePath` values to take advantage of the fallback icons. This will help you quickly place everything correctly. You can add custom images later.
 *   **Validate your JSON:** Use an online JSON validator to ensure your file has no syntax errors before adding it to the project.
+
+---
+
+## 4. Full metrics list
+
+Here is a list with all Standard Metrics:
+
+**[➡️ OVMS Standard Metrics](metrics.md)**
